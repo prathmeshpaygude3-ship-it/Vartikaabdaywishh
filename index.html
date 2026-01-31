@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secret Surprise 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="password-page">
+
+<div class="box">
+  <h2>🎁 Secret Surprise</h2>
+  <p>Enter the magic password ✨</p>
+
+  <input type="password" id="pass" placeholder="Password">
+  <button onclick="checkPassword()">Unlock 💝</button>
+
+  <p id="error"></p>
+</div>
+
+<script>
+function checkPassword() {
+  const correct = "shampoo";   
+  const user = document.getElementById("pass").value;
+
+  if (user === correct) {
+    window.location.href = "birthday.html";
+  } else {
+    document.getElementById("error").innerText = "Oops! Wrong password 😝";
+  }
+}
+</script>
+
+</body>
+</html>
